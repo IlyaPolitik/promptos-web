@@ -1,0 +1,1 @@
+const r={technique:"wiki.cat.technique",pattern:"wiki.cat.pattern",safety:"wiki.cat.safety"},a={intro:"wiki.difficulty.intro",core:"wiki.difficulty.core",advanced:"wiki.difficulty.advanced"};function c(i,t,n){if(!t)return n;const e=i(t);return e===t?n:e}function o(i,t){return c(t,r[i],i)}function u(i,t){return c(t,a[i],i)}export{u as a,o as l};

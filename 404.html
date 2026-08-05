@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>PromptOS — Approved AI Workflows for Business Teams</title>
+    <meta name="description" content="PromptOS turns repeated AI work into approved workflows with standards, evals, approvals, run history, and evidence." />
+    <meta name="author" content="PromptOS" />
+    <link rel="icon" type="image/svg+xml" href="/promptos-icon.svg" />
+    <link rel="canonical" href="https://promptos.app/" />
+    <meta property="og:url" content="https://promptos.app/" />
+    <meta property="og:site_name" content="PromptOS" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+    <meta property="og:title" content="PromptOS — Approved AI Workflows for Business Teams" />
+    <meta property="og:description" content="Route AI work by risk, apply standards, run evals, capture approvals, and keep evidence." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://promptos.app/promptos-og.svg" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="PromptOS — Approved AI Workflows for Business Teams" />
+    <meta name="twitter:description" content="Route AI work by risk, apply standards, run evals, capture approvals, and keep evidence." />
+    <meta name="twitter:image" content="https://promptos.app/promptos-og.svg" />
+    <style>
+      html,
+      body,
+      #root {
+        min-height: 100%;
+        margin: 0;
+        background: #0b0b0e;
+      }
+
+      html[data-theme="light"],
+      html[data-theme="light"] body,
+      html[data-theme="light"] #root {
+        background: #fafafa;
+      }
+    </style>
+    <script type="module" crossorigin src="/assets/index-DFgi4PJe.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/vendor-react-cqj1OLiM.js">
+    <link rel="modulepreload" crossorigin href="/assets/vendor-router-DbpbOyhB.js">
+    <link rel="modulepreload" crossorigin href="/assets/i18n-en-D1JjCRrn.js">
+    <link rel="stylesheet" crossorigin href="/assets/index-BXwNLc1G.css">
+  </head>
+
+  <body>
+    <script>
+      // Apply theme + lang before paint to prevent flash.
+      (function () {
+        try {
+          var mode = localStorage.getItem('promptos.theme') || 'dark';
+          var resolved;
+          if (mode === 'light' || mode === 'dark') {
+            resolved = mode;
+          } else {
+            var h = new Date().getHours();
+            resolved = (h >= 19 || h < 7) ? 'dark' : 'light';
+          }
+          var root = document.documentElement;
+          if (resolved === 'dark') root.classList.add('dark');
+          root.dataset.theme = resolved;
+          root.dataset.themeMode = mode;
+
+          var SUPPORTED = ['en', 'ru', 'uk', 'pl'];
+          var lang = null;
+          try {
+            var fromUrl = new URLSearchParams(location.search).get('lang');
+            if (fromUrl) fromUrl = fromUrl.toLowerCase().slice(0, 2);
+            if (fromUrl && SUPPORTED.indexOf(fromUrl) !== -1) lang = fromUrl;
+          } catch (e) {}
+          if (!lang) {
+            var stored = localStorage.getItem('promptos.lang');
+            if (stored && SUPPORTED.indexOf(stored) !== -1) lang = stored;
+          }
+          if (!lang) {
+            var list = (navigator.languages && navigator.languages.length) ? navigator.languages : [navigator.language || 'en'];
+            for (var i = 0; i < list.length; i++) {
+              var c = String(list[i] || '').toLowerCase().slice(0, 2);
+              if (SUPPORTED.indexOf(c) !== -1) { lang = c; break; }
+            }
+          }
+          root.lang = lang || 'en';
+        } catch (e) {}
+      })();
+    </script>
+    <div id="root"></div>
+  </body>
+</html>

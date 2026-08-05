@@ -1,0 +1,1 @@
+const n="promptos.verify.last_sent_at",o=60;function a(){try{const t=parseInt(localStorage.getItem(n)||"0",10);if(!t)return 0;const e=Math.ceil((t+60*1e3-Date.now())/1e3);return e>0?e:0}catch{return 0}}function r(){try{localStorage.setItem(n,String(Date.now()))}catch{}}export{o as V,a as g,r as m};
