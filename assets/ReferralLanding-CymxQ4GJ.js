@@ -1,1 +1,0 @@
-import{r,j as t}from"./vendor-react-cqj1OLiM.js";import{s}from"./referral-DMLjAmW4.js";import{d as o,N as a}from"./vendor-router-DbpbOyhB.js";function i(){const{code:e}=o();return r.useEffect(()=>{e&&s(e)},[e]),t.jsx(a,{to:`/signup?ref=${encodeURIComponent((e??"").toUpperCase())}`,replace:!0})}export{i as default};
