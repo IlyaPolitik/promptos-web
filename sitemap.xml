@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://promptos.app/</loc><lastmod>2026-10-10</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://promptos.app/pricing</loc><lastmod>2026-10-10</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://promptos.app/wiki</loc><lastmod>2026-10-10</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://promptos.app/terms</loc><lastmod>2026-10-10</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
-  <url><loc>https://promptos.app/privacy</loc><lastmod>2026-10-10</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
-  <url><loc>https://promptos.app/refund-policy</loc><lastmod>2026-10-10</lastmod><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://promptos.app/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://promptos.app/pricing</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://promptos.app/wiki</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://promptos.app/terms</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://promptos.app/privacy</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://promptos.app/refund-policy</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://promptos.app/guides/</loc><lastmod>2026-10-10</lastmod></url>
+  <url><loc>https://promptos.app/tools/prompt-brief/</loc><lastmod>2026-10-10</lastmod></url>
+  <url><loc>https://promptos.app/guides/sales-account-research-prompt/</loc><lastmod>2026-10-10</lastmod></url>
+  <url><loc>https://promptos.app/guides/customer-escalation-response-prompt/</loc><lastmod>2026-10-10</lastmod></url>
+  <url><loc>https://promptos.app/guides/qbr-summary-prompt/</loc><lastmod>2026-10-10</lastmod></url>
 </urlset>

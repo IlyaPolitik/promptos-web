@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Free Prompt Brief Builder for Teams | PromptOS</title>
+  <meta name="description" content="Turn a recurring task into a structured, reviewable prompt brief. This free browser tool runs locally and does not send your inputs to a server.">
+  <link rel="canonical" href="https://promptos.app/tools/prompt-brief/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Free Prompt Brief Builder for Teams | PromptOS">
+  <meta property="og:description" content="Turn a recurring task into a structured, reviewable prompt brief. This free browser tool runs locally and does not send your inputs to a server.">
+  <meta property="og:url" content="https://promptos.app/tools/prompt-brief/">
+  <meta property="og:image" content="https://promptos.app/promptos-og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://promptos.app/promptos-og.png">
+  <meta name="twitter:title" content="Free Prompt Brief Builder for Teams | PromptOS">
+  <meta name="twitter:description" content="Turn a recurring task into a structured, reviewable prompt brief. This free browser tool runs locally and does not send your inputs to a server.">
+  <link rel="stylesheet" href="/organic.css">
+  <link rel="icon" href="/promptos-icon.svg" type="image/svg+xml">
+  <script src="/organic.js" defer></script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://promptos.app/"},{"@type":"ListItem","position":2,"name":"Brief builder","item":"https://promptos.app/tools/prompt-brief/"}]}</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="wordmark" href="/" aria-label="PromptOS home">PROMPT<span>OS</span><span class="wordmark-dot">.</span></a>
+      <nav aria-label="Main navigation">
+        <a href="/">Home</a><a href="/guides/">Guides</a><a href="/tools/prompt-brief/">Brief builder</a><a class="nav-action" href="/#/signup">Open workspace <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+  <main id="main"><div class="shell">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><span aria-current="page">Brief builder</span></nav>
+    <section class="hero tool-hero"><span class="eyebrow">FREE BROWSER TOOL / NO SIGN-IN</span><h1>Build a prompt brief before you write the prompt</h1><div class="hero-aside"><p>Capture the task, context, audience, constraints, and output format in one brief. The builder assembles your words into a reusable draft with an explicit human review step.</p><p>This tool uses only text you enter in this browser session. It does not call an AI model, fetch data, save your inputs, or send a message.</p></div></section>
+    <div class="tool-layout"><section class="tool-form" aria-labelledby="brief-form-title"><span class="eyebrow">01 / SET THE TERMS</span><h2 id="brief-form-title">What does good look like?</h2><p>Use approved, non-sensitive context. Only the task is required.</p>
+      <form id="brief-form" autocomplete="off"><fieldset id="brief-fields" disabled>
+        <legend class="sr-only">Prompt brief inputs</legend>
+        <div class="form-field"><label for="task">Task <span aria-label="required">*</span></label><p id="task-hint" class="field-hint">Name one outcome the prompt should produce.</p><textarea id="task" name="task" rows="3" placeholder="Summarize the support issue and propose a next update" aria-describedby="task-hint" required></textarea></div>
+        <div class="form-field"><label for="context">Context and sources</label><p id="context-hint" class="field-hint">What facts or approved material may the output use?</p><textarea id="context" name="context" rows="2" placeholder="Use the verified case notes and approved policy text" aria-describedby="context-hint"></textarea></div>
+        <div class="form-field"><label for="audience">Audience</label><p id="audience-hint" class="field-hint">Who will read or use the result?</p><textarea id="audience" name="audience" rows="2" placeholder="The human case owner" aria-describedby="audience-hint"></textarea></div>
+        <div class="form-field"><label for="constraints">Constraints</label><p id="constraints-hint" class="field-hint">What must it avoid, flag, or leave for approval?</p><textarea id="constraints" name="constraints" rows="2" placeholder="Do not invent a fix date or send a reply" aria-describedby="constraints-hint"></textarea></div>
+        <div class="form-field"><label for="format">Output format</label><p id="format-hint" class="field-hint">Specify sections, length, or evidence markers.</p><textarea id="format" name="format" rows="2" placeholder="Claim ledger, 150-word draft, reviewer checklist" aria-describedby="format-hint"></textarea></div>
+        <div class="form-actions"><button class="button" type="submit">Build brief <span aria-hidden="true">↗</span></button><button class="button secondary" type="reset">Clear all</button></div>
+      </fieldset></form>
+    </section><section class="tool-result" aria-labelledby="brief-result-title"><span class="eyebrow">02 / REVIEW THE DRAFT</span><h2 id="brief-result-title">Your prompt brief</h2><p>This is a structured template, not an AI result. Edit it after copying or downloading, then have a person review it before use.</p>
+      <label class="sr-only" for="brief-output">Generated prompt brief</label><textarea id="brief-output" rows="19" readonly placeholder="Your brief will appear here after you complete the task field and select Build brief."></textarea>
+      <div class="form-actions"><button id="copy-brief" class="button secondary" type="button" disabled>Copy brief</button><button id="download-brief" class="button secondary" type="button" disabled>Download .md</button></div><p id="brief-feedback" class="feedback" role="status" aria-live="polite"></p>
+    </section></div>
+    <noscript><section class="noscript-note"><h2>Use this template without JavaScript</h2><p>Write a task and fill in the remaining lines. This page does not send your information anywhere.</p><pre>Task: [THE RESULT YOU NEED]
+Context and approved sources: [WHAT MAY BE USED]
+Audience: [WHO WILL USE THE RESULT]
+Constraints: [WHAT TO AVOID OR FLAG]
+Output format: [SECTIONS AND LENGTH]
+Review: Cite supplied sources, label unknowns, and require human approval before sharing.</pre></section></noscript>
+    <section class="related" aria-labelledby="guide-samples-title"><span class="eyebrow">EXAMPLES IN PRACTICE</span><h2 id="guide-samples-title">Start from a reviewed job</h2><div class="related-grid"><article class="guide-card">
+    <span class="eyebrow">Sales <span aria-hidden="true">/</span> 8 min read</span>
+    <h2><a href="/guides/sales-account-research-prompt/">Sales Account Research Prompt for Better Discovery</a></h2>
+    <p>Use this prompt to prepare a short discovery brief from information your team is allowed to use. It separates verified observations from hypotheses, gives the seller questions to ask, and keeps every claim traceable to an input.</p>
+    <a class="text-link" href="/guides/sales-account-research-prompt/">Read guide <span aria-hidden="true">↗</span></a>
+  </article><article class="guide-card">
+    <span class="eyebrow">Customer Support <span aria-hidden="true">/</span> 9 min read</span>
+    <h2><a href="/guides/customer-escalation-response-prompt/">Customer Escalation Response Prompt With Review Gates</a></h2>
+    <p>Use this prompt when a customer needs a timely, accountable update but the investigation is incomplete. It creates an internal fact check and a draft response without inventing a fix, deadline, or policy exception.</p>
+    <a class="text-link" href="/guides/customer-escalation-response-prompt/">Read guide <span aria-hidden="true">↗</span></a>
+  </article><article class="guide-card">
+    <span class="eyebrow">Customer Success <span aria-hidden="true">/</span> 10 min read</span>
+    <h2><a href="/guides/qbr-summary-prompt/">QBR Summary Prompt for Evidence-Led Customer Reviews</a></h2>
+    <p>Use this prompt to turn approved account notes and metrics into a customer review draft. It makes measurement windows visible, separates observed outcomes from interpretation, and leaves commitments for human approval.</p>
+    <a class="text-link" href="/guides/qbr-summary-prompt/">Read guide <span aria-hidden="true">↗</span></a>
+  </article></div></section>
+  </div></main>
+  <footer class="site-footer"><div class="shell footer-inner"><span>PromptOS / Practical AI work</span><span>Review before sharing. Keep your sources close.</span></div></footer>
+</body>
+</html>
